@@ -301,10 +301,10 @@ var config = {
 				$('.container').css('background-repeat',"no-repeat");
 				$('.container').css('background-size',"cover");
 
-			var reset = $("<button>");
-			 reset.text("Reset");
-			 reset.css("margin-top", "23px");
-			 $("#reset").append(reset);
+			// var reset = $("<button>");
+			//  reset.text("Reset");
+			//  reset.css("margin-top", "23px");
+			//  $("#reset").append(reset);
 				
 				var foodURL = foodStorage.url;
 			var foodimg = $("<img>").attr("src", foodURL);
