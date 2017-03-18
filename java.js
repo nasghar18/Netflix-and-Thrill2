@@ -160,7 +160,7 @@ var config = {
 		console.log(movieStorage.youTubeId);
 			
 		var movieframe = $("<iframe>");
-		movieframe.attr("src", "http://www.youtube.com/embed/"+ data.items[0].id.videoId+"?rel=0&autoplay=1");
+		movieframe.attr("src", "https://www.youtube.com/embed/"+ data.items[0].id.videoId+"?rel=0&autoplay=1");
 		movieframe.attr("frameborder", "0");
 		movieframe.css("margin-top", "30px");
 		//movieframe.attr("height", "442");
