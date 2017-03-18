@@ -1,1 +1,1 @@
-# Netflix-and-Thrill2
+# Netflix-And-Thrill
