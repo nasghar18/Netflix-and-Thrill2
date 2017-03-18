@@ -127,7 +127,7 @@ var config = {
 			
 			console.log(movieLink);
 				var randomNum = Math.floor(Math.random() * 30);
-				var url= "http://api.giphy.com/v1/gifs/search?q="+ movieStorage.firstname + "+" + movieStorage.lastname + "&api_key=dc6zaTOxFJmzC";
+				var url= "https://api.giphy.com/v1/gifs/search?q="+ movieStorage.firstname + "+" + movieStorage.lastname + "&api_key=dc6zaTOxFJmzC";
 				$.ajax({
 		url: url,
 		method:"GET",
@@ -219,7 +219,7 @@ var config = {
 		movieStorage.lastname= b;
 		console.log(movieStorage)
 	
-		var url = "http://netflixroulette.net/api/api.php?actor="+  movieStorage.firstname + "%20" + movieStorage.lastname;
+		var url = "https://netflixroulette.net/api/api.php?actor="+  movieStorage.firstname + "%20" + movieStorage.lastname;
 			$.ajax({
 		url: url,
 		method:"GET",
@@ -230,7 +230,7 @@ var config = {
 		movieStorage.showId=response[randomNum2].show_id;
 		movieStorage.title= response[randomNum2].show_title;
 		return $.ajax({
-		url: "http://www.omdbapi.com/?t=" + movieStorage.title + "&y=&plot=short&r=json",
+		url: "https://www.omdbapi.com/?t=" + movieStorage.title + "&y=&plot=short&r=json",
 		method: "GET"
 			})
 		
@@ -309,7 +309,7 @@ var config = {
 			$("#foodbox").append(foodimg);
 
 		var movieframe = $("<iframe>");
-		movieframe.attr("src", "http://www.youtube.com/embed/"+ movieStorage.youTubeId+"?rel=0&autoplay=1");
+		movieframe.attr("src", "https://www.youtube.com/embed/"+ movieStorage.youTubeId+"?rel=0&autoplay=1");
 		movieframe.attr("frameborder", "0");
 		movieframe.css("margin-top", "30px");
 		//movieframe.attr("height", "442");
