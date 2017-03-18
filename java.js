@@ -225,7 +225,7 @@ var config = {
 		method:"GET",
 		}).then(function(response){
 			console.log(response);
-			var randomNum2 = Math.floor(Math.random() * (response.length - 1));
+			var randomNum2 = Math.floor(Math.random() * (response.length));
 			console.log(randomNum2);
 		movieStorage.showId=response[randomNum2].show_id;
 		movieStorage.title= response[randomNum2].show_title;
