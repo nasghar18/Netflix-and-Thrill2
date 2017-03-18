@@ -284,10 +284,13 @@ var config = {
 				$(".randomizer").on("click", function(event) {
 					event.preventDefault();
 					clickStatus = true;
+					$("#reset").show();
 					$("#back").css("background-color","black");
 					$("#mash").css("font-family",'Patua One','cursive')
 					$("#mash").html("Click the images for more options")
 					$("#moviebox").empty();
+					$("#movieframe").empty();
+					$("foodbox").empty();
 					randomIndex = Math.floor(Math.random() * dataArray.length);
 					movieStorage.showId = dataArray[randomIndex].showId;
 					var movieLink = "https://www.netflix.com/title/" + movieStorage.showId;
